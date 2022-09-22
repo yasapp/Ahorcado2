@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-whidth, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+
+    <script src="funciones.js"></script>
+
+    <title>AHORCADO</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+  
+</head>
+<body>
+    <header>
+        <img id="logo" src="imagenes/logo.png" alt="logo">
+        <h1 id="titulo">¿AHORCADO?</h1>
+    </header>
+      
+    <main>
+        <img id="imagen" src="imagenes/img0.png" alt="robot">
+        <div>
+            <p id="palabra_a_adivinar"> 
+            </p>
+            <div id="btn">
+            <button id="jugar">Obtener palabra</button>
+            <button id="agregar" >Agregar palabra</button>
+
+            <input type="text" id="palabra_agregar" placeholder="Agrega una Palabra" value="" oninput="this.value = this.value.replace(/[^a-zA-Z0-9 &nbsp]/,'')">
+            </div>
+           
+
+            <div id="letras">
+                <button>A</button>
+                <button>B</button>
+                <button>C</button>
+                <button>D</button>
+                <button>E</button>
+                <button>F</button>
+                <button>G</button>
+                <button>H</button>
+                <button>I</button>
+                <button>J</button>
+                <button>K</button>
+                <button>L</button>
+                <button>M</button>
+                <button>N</button>
+                <button>Ñ</button>
+                <button>O</button>
+                <button>P</button>
+                <button>Q</button>
+                <button>R</button>
+                <button>S</button>
+                <button>T</button>
+                <button>U</button>
+                <button>V</button>
+                <button>W</button>
+                <button>X</button>
+                <button>Y</button>
+                <button>Z</button>               
+            </div>
+            <p id="resultado" ></p>
+        </div>
+    </main>
+    <script src="juego.js"></script>
+    
+</body>
+</html>
